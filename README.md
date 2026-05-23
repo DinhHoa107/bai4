@@ -1,4 +1,4 @@
-# Bài tập 04 - Khai thác n8n để tự động đăng bài lên WordPress
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d7922a61-8952-4ecf-9d17-2ca5dca0d1ac" /># Bài tập 04 - Khai thác n8n để tự động đăng bài lên WordPress
 
 **Môn:** Phát triển ứng dụng với mã nguồn mở (TEE0421)  
 **Lớp:** 58KTPM  
@@ -53,9 +53,11 @@ Tạo tunnel **btvn04** và cấu hình 3 public hostname routes:
 | pma | taphamdinhhoa.io.vn | http://phpmyadmin:80 |
 | n8n | taphamdinhhoa.io.vn | http://n8n:5678 |
 
-> 📸 **[Chèn ảnh: Cloudflare dashboard - 3 routes Published application routes]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ebe27d93-4315-4ea6-9828-7da0e70d5d96" />
 
-> 📸 **[Chèn ảnh: docker logs cloudflared - Registered tunnel connection x4]**
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/aecfd829-389d-436c-b5ed-1383fb241d18" />
+
 
 ---
 
@@ -63,7 +65,8 @@ Tạo tunnel **btvn04** và cấu hình 3 public hostname routes:
 
 Truy cập **pma.taphamdinhhoa.io.vn** → đăng nhập → chọn **wordpress_db**
 
-> 📸 **[Chèn ảnh: phpMyAdmin - wordpress_db trống, thông báo "Không tìm thấy bảng nào"]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/057ffa8e-422c-4445-92bb-ed262a19900f" />
+
 
 ---
 
@@ -74,15 +77,18 @@ Truy cập **wp.taphamdinhhoa.io.vn** → làm theo hướng dẫn cài đặt:
 - Username: dinhhoa
 - Email: Dinhhoa1072004@gmail.com
 
-> 📸 **[Chèn ảnh: form cài đặt WordPress đã điền thông tin]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/edd778b6-d119-4b65-915b-3d843444e315" />
 
-> 📸 **[Chèn ảnh: trang quản trị WordPress sau khi cài xong]**
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/e36e8d49-c4d6-4bab-a127-119fa8f085d0" />
+
 
 ---
 
 ## 5. Kiểm tra DB sau khi cài WordPress
 
-> 📸 **[Chèn ảnh: phpMyAdmin - wordpress_db có 12 bảng (wp_posts, wp_users, wp_options...)]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/fa9cd5b0-26d0-444f-a545-4e6a17393771" />
+
 
 WordPress đã tự động tạo **12 bảng** trong database.
 
@@ -93,12 +99,14 @@ WordPress đã tự động tạo **12 bảng** trong database.
 ### Bài viết 1: Giới thiệu bản thân
 Nội dung giới thiệu thông tin cá nhân, sở thích, mục tiêu học tập.
 
-> 📸 **[Chèn ảnh: bài viết "Giới thiệu về bản thân" trên WordPress]**
+<img width="1916" height="1079" alt="image" src="https://github.com/user-attachments/assets/3c9e41f1-a6d4-42a0-9523-50286a53822d" />
+
 
 ### Bài viết 2: Kiến thức môn học
 Tổng hợp những kiến thức đã học được trong môn Phát triển ứng dụng với mã nguồn mở.
 
-> 📸 **[Chèn ảnh: bài viết "Kiến thức học được từ môn Phát triển ứng dụng với mã nguồn mở"]**
+<img width="1916" height="1079" alt="image" src="https://github.com/user-attachments/assets/468aa119-1eb0-4010-b6fd-88c862089de0" />
+
 
 ---
 
