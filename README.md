@@ -29,7 +29,8 @@ File `docker-compose.yml` chứa 5 services:
 | cloudflared | cloudflare/cloudflared:latest | Public ra internet |
 | n8n | n8nio/n8n:latest | Automation workflow |
 
-> 📸 **[Chèn ảnh: nội dung file docker-compose.yml]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7499c26d-916c-4295-b693-bbbaa2f94bea" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/883a66f6-4b9e-4a52-ba24-6ad82aa6bcf2" />
 
 Khởi động tất cả services:
 ```bash
@@ -37,7 +38,8 @@ cd ~/wordpress-btvn04
 docker compose up -d
 ```
 
-> 📸 **[Chèn ảnh: kết quả `docker ps` - 5 container STATUS Up]**
+<img width="1487" height="761" alt="image" src="https://github.com/user-attachments/assets/6eb5069a-089e-4db3-82c2-acb941660ce5" />
+
 
 ---
 
