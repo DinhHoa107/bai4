@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d7922a61-8952-4ecf-9d17-2ca5dca0d1ac" /># Bài tập 04 - Khai thác n8n để tự động đăng bài lên WordPress
+ # Bài tập 04 - Khai thác n8n để tự động đăng bài lên WordPress
 
 **Môn:** Phát triển ứng dụng với mã nguồn mở (TEE0421)  
 **Lớp:** 58KTPM  
@@ -116,7 +116,8 @@ Truy cập **n8n.taphamdinhhoa.io.vn** → tạo tài khoản → tạo workflow
 
 ### Workflow gồm 4 node:
 [Telegram Trigger] → [Google Gemini] → [Code JavaScript] → [WordPress: Create Post]
-> 📸 **[Chèn ảnh: workflow 4 node đã kết nối đầy đủ]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f3ad3b61-69be-4ee0-b1fc-225c55d1c2cf" />
+
 
 ### Chi tiết từng node:
 
@@ -124,13 +125,15 @@ Truy cập **n8n.taphamdinhhoa.io.vn** → tạo tài khoản → tạo workflow
 - Bot: @DinhHoaAutoPost_bot
 - Trigger On: Message
 
-> 📸 **[Chèn ảnh: cấu hình node Telegram Trigger - Connection tested successfully]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ce09bffc-b376-4ff2-acb2-d7d2c92f4f28" />
+
 
 **Node 2 - Google Gemini (Message a Model):**
 - Model: gemini-2.5-flash
 - Prompt: `{{ $json.message.text }}. Kết quả sinh ra ở định dạng JSON với 2 trường: post_title và post_content (HTML+CSS)`
 
-> 📸 **[Chèn ảnh: cấu hình node Google Gemini với prompt]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/906dbbdf-3bbe-4750-92e4-13fef03df537" />
+
 
 **Node 3 - Code in JavaScript:**
 ```javascript
@@ -142,8 +145,7 @@ return {
   content: cleanData.post_content
 };
 ```
-
-> 📸 **[Chèn ảnh: node Code JavaScript với code đã điền]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/582358d4-c59b-44e3-9723-3483d068c7b3" />
 
 **Node 4 - WordPress: Create a Post:**
 - WordPress URL: https://wp.taphamdinhhoa.io.vn
@@ -151,7 +153,8 @@ return {
 - Content: `{{ $json.content }}`
 - Status: Publish
 
-> 📸 **[Chèn ảnh: cấu hình node WordPress Create a Post]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/9cdd31f0-642f-4df7-8355-07230d8c630f" />
+
 
 ---
 
@@ -159,15 +162,18 @@ return {
 
 ### Bước 1: Nhắn tin với Telegram Bot
 
-> 📸 **[Chèn ảnh: tin nhắn gửi đến @DinhHoaAutoPost_bot trên điện thoại]**
+<img width="870" height="1885" alt="image" src="https://github.com/user-attachments/assets/c0a51bd3-0514-44c4-8387-4d14a3ae3a87" />
+
 
 ### Bước 2: n8n xử lý tự động
 
-> 📸 **[Chèn ảnh: n8n Executions - Succeeded, 4 node đều có dấu ✓ xanh]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/8bdd38a3-6254-4448-90b6-c143a109cd95" />
+
 
 ### Bước 3: Bài viết tự động xuất hiện trên WordPress
-
-> 📸 **[Chèn ảnh: bài viết mới tự động đăng trên wp.taphamdinhhoa.io.vn]**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ebf48f6d-5ebb-4224-9532-0a5f9fb9ee87" />
+<img width="1919" height="1067" alt="image" src="https://github.com/user-attachments/assets/0c1a1ce3-3ea7-4fe2-8bd4-02a74a569ace" />
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/da616331-d35f-4044-b581-0d37c17a07a1" />
 
 ---
 
